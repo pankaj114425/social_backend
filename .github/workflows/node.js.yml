@@ -31,3 +31,4 @@ jobs:
       run: |
         touch .env
         echo "PROD_ENV_VAR=${{ secrets.PROD_ENV_VAR }}" > .env
+    - run: pm2 start index
